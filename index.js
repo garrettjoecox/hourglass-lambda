@@ -1,5 +1,5 @@
 var CronJob = require('cron').CronJob;
-const handler = require('./handler');
+const handler = require('./handler').handler;
 
 new CronJob('*/15 * * * *', async () => {
   try {
